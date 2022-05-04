@@ -24,7 +24,7 @@ user_guess = int(input("Make a guess: "))
 actual_answer = random.randint(2,99)         # 1 and 100 not included 
 
 def answer_is_wrong():     # Create function with docstring
-  """check if user_guess not equal to actual_answer, will minus no_of_attempts_left"""
+  """check if user_guess not equal to actual_answer, will minus no_of_attempts_left"""        # Explains purpose of the function using docstring
   while user_guess != actual_answer:
     ### METHOD 1: global no_of_attempts_left      # to modify global variable within local scope---> so that i can change the value of that global variable   (NOT GOOD METHOD)----> because you are modifying a global function within a local scope 
     global no_of_attempts_left
